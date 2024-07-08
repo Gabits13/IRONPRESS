@@ -1,0 +1,155 @@
+/*PAGE INICIAL*/
+
+body{
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+    
+    }
+    .navbar-toggler, .back-button-navbar {
+           color: black;
+           border: none;
+           font-size: 30px; /*tamanho*/
+           cursor: pointer;
+           
+       }
+      .custom-bg-blue {
+           background-color: #e6f7ff; 
+           padding: 20px; 
+               margin:0px;
+               max-width: 100%;
+           border-radius: 0  px; 
+      }
+   #p-hover:hover {
+       opacity: 1;
+   }
+   #carousel-item {
+       background-size: cover;
+       background-position: center;
+   }
+   #logo-texto span {
+       transition: opacity 0.5s ease;
+   }
+   
+   #logo-texto:hover span {
+       opacity: 0.6; 
+   }
+    .carousel-caption {
+       display: none;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       background-color: rgba(0, 0, 0, 0.5);
+       color: #fff;
+       padding: 10px;
+       text-align: center;
+     }
+     
+   
+   
+     .carousel-item:hover .carousel-caption {
+       display: block;
+     }
+   .custom-carousel-btn {
+       color: white;
+       border: none;
+   }
+   
+   .custom-carousel-btn:hover {
+       background-color: #D1E0FF; 
+   }
+   .sidebar {
+     position: fixed;
+     top: 0;
+     right: -350px;
+     width: 300px;
+     height: 100%;
+     background: linear-gradient(to bottom left, #0099E0, #42d6ff);
+     transition: right 0.7s ease-in-out;
+     padding-top: 20px;
+     z-index: 1050;
+   }
+   
+   .sidebar.active {
+     right: 0;
+   }
+   
+   .sidebar .nav-link {
+     color: black;
+     font-size: 18px;
+     padding: 15px 20px;
+   }
+   
+   .back-button {
+     display: none;
+     color: white;
+     font-size: 18px;
+     cursor: pointer;
+     position: absolute;
+     left: 25px;
+     top: 20px;
+   }
+   
+   .back-button.active {
+     display: block;
+     
+   }
+
+
+
+   /*PAGE CONTATO*/
+
+   @media (max-width: 576px) {
+    /*  tamanho do mapa responsivo para dispositivos móveis */
+    .map-responsive iframe {
+        width: 100%; 
+        height: 250px; 
+    }
+}
+
+
+
+
+/*PAGE ORCAMENTO*/
+
+.texto-imagem {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;  /* Começa invisível */
+    transition: opacity 0.7s;  /* Definindo uma transição de 0.7 segundos para a opacidade */
+}
+
+  /* Altura para telas maiores (desktops, notebooks, tablets) */
+  @media (min-width: 992px) {
+    #google-form-iframe {
+        height: 1400px;
+    }
+}
+
+/* Altura para dispositivos móveis */
+@media (max-width: 991px) {
+    #google-form-iframe {
+        height: 1500px;
+    }
+}
+
+
+/*PAGE PRODUCAO*/
+/*PAGE QUEM SOMOS*/
+/*TEM NADA KKKKKK*/
+
+
+/*PAGE SERVICOS*/
+
+
+
+
+
+
