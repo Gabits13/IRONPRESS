@@ -2,9 +2,93 @@
 
 body{
     overflow-x: hidden;
-    background-color: #f6f6f6;
-    
+    transition: background-color 0.6s, color 0.6s;
     }
+
+    .sidebar .nav-link-active {
+      color: white;
+      font-weight: bolder;
+    }
+
+   /*MODO ESCURO*/
+
+   /**/
+     .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+  
+    .dark-mode .navbar {
+      background: linear-gradient(#3BBEE2, #0085C3);
+     
+    }
+    .dark-mode .navbar .nav-link {
+      color: white;
+     
+    }
+
+  
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+    .dark-mode .card-borda {
+      background-color: #121212;
+      color: #ffffff;
+    }
+  
+    .dark-mode .dropdown-menu {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .dark-mode .btn-per{
+      background-color: #1e1e1e;
+      color: #ffffff;
+      border: none;
+    }
+
+    .dark-mode .dropdown-menu .dropdown-item {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      cursor: pointer;
+      border: 1px;
+    }
+
+    .dark-mode .sidebar {
+      position: fixed;
+      top: 0;
+      right: -350px;
+      width: 300px;
+      height: 100%;
+      background: linear-gradient(to bottom left, #3BBEE2, #0085C3);
+      transition: right 0.7s ease-in-out;
+      padding-top: 20px;
+      z-index: 1050;
+    }
+    
+    .dark-mode .sidebar .active {
+      right: 0;
+    }
+    
+    .dark-mode .sidebar .nav-link {
+      color: white;
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+
+    .dark-mode .sidebar .linkactive  {
+      color: black;
+      font-weight: bolder;
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+    /*FIM DO MODO ESCURO*/
+
+    .navbar{
+      background: linear-gradient(#42d6ff, #0099E0);
+    }
+
     .navbar-toggler, .back-button-navbar {
            color: black;
            border: none;
@@ -12,6 +96,24 @@ body{
            cursor: pointer;
            
        }
+
+       .dropdown-menu{
+
+        border: none;
+       }
+
+       .dropdown-menu .dropdown-item {
+        cursor: pointer;
+        border: 1px;
+        
+      }
+
+       .btn {
+        
+        border: none;
+
+      }
+
       .custom-bg-blue {
            background-color: #e6f7ff; 
            padding: 20px; 
@@ -80,6 +182,8 @@ body{
      padding: 15px 20px;
    }
    
+   
+
    .back-button {
      display: none;
      color: white;
@@ -96,8 +200,56 @@ body{
    }
 
 
+   
+   /*PAGE SERVICOS*/
+
+
+
+   .container-torneamento {
+   
+    background-color: #f6f6f6; 
+    margin: 0px;
+    padding: 20px; 
+    max-width: 100%;
+
+   }
+   .dark-mode .container-torneamento{
+
+    background-color: #121212;
+    color: #ffffff;
+
+   }
+
+   .card-servicos{
+
+    background-color: #ffffff;
+
+   }
+   .dark-mode .card-servicos{
+
+    background-color: #1e1e1e;
+    color: #ffffff;
+
+   }
+
 
    /*PAGE CONTATO*/
+
+   .dark-mode .p-ironpress{
+
+    color: skyblue;
+ 
+ }
+
+.p-ironpress{
+
+  font-size: 17pt; 
+  color: darkblue;
+
+}
+
+
+
 
    @media (max-width: 576px) {
     /*  tamanho do mapa responsivo para dispositivos móveis */
@@ -108,6 +260,14 @@ body{
 }
 
 
+
+/*PAGE PRODUCAO*/
+
+.dark-mode .container-torneamento{
+
+  background-color: #1e1e1e;
+  color: white;
+}
 
 
 /*PAGE ORCAMENTO*/
@@ -141,12 +301,7 @@ body{
 }
 
 
-/*PAGE PRODUCAO*/
-/*PAGE QUEM SOMOS*/
-/*TEM NADA KKKKKK*/
 
-
-/*PAGE SERVICOS*/
 
 
 

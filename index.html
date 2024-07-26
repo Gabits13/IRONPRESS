@@ -1,159 +1,184 @@
 <!DOCTYPE HTML>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="IronPress - Usinagem. Trabalhamos com solda, torneamento, ferramentaria, e fabricação de peças de alta precisão para os setores automobilístico, eletrônico, entre outros.">
-    <meta name="keywords" content="IronPress, ironpress usinagem industria e comercio, iron press usinagem industria e comercio, iron press, iron press usinagem, ironpress, ironpress usinagem, ironpress usina, usina, usinagem, usinagem CNC, solda, torneamento, tornos, ferramentaria, metalúrgica, fábrica, peças de alta precisão, fabricação de ferramentas, automobilística, eletrônica"> 
-    <title>IRONPRESS USINAGEM</title>
-    <link rel="shortcut icon" href="img/icocavaco.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="IronPress - Usinagem. Trabalhamos com solda, torneamento, ferramentaria, e fabricação de peças de alta precisão para os setores automobilístico, eletrônico, entre outros.">
+  <meta name="keywords" content="IronPress, ironpress usinagem industria e comercio, iron press usinagem industria e comercio, iron press, iron press usinagem, ironpress, ironpress usinagem, ironpress usina, usina, usinagem, usinagem CNC, solda, torneamento, tornos, ferramentaria, metalúrgica, fábrica, peças de alta precisão, fabricação de ferramentas, automobilística, eletrônica"> 
+  <title>IRONPRESS USINAGEM</title>
+  <link rel="shortcut icon" href="img/icocavaco.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" rel="stylesheet">
-	  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-<header>
+</head>
 
-<!--COLOCAR A NAVBAR E O SCRIPT EM TODAS AS OUTRAS PAGINAS-->
-<nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient( #42d6ff, #0099E0);">
-  <div class="container w-100 p-0 mt-0 mb-0">
-    <a class="navbar-brand" href="index.html" id="logo-texto" style="font-family: Arial; font-size: 14px; font-weight: bold;">
-      <img src="img/logocavaco.png" alt="Logo da Empresa" width="70" height="50" class="d-inline-block align-text-center">
-      <span>IRONPRESS USINAGEM &reg;</span>
-    </a>
-    <button style="display: none;" class="back-button-navbar" type="button" id="navbar-back-button">
-      <i class="bi bi-arrow-left"></i>
-  </button>
-    <button class="navbar-toggler" style="margin-right: 30px;" type="button" id="menu-toggler">
-      <i class="bi bi-list"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav nav-underline p-3">
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container w-100 p-0 mt-0 mb-0">
+      <a class="navbar-brand" href="index.html" id="logo-texto" style="font-family: Arial; font-size: 14px; font-weight: bold;">
+        <img src="img/logocavaco.png" alt="Logo da Empresa" width="70" height="50" class="d-inline-block align-text-center">
+        <span>IRONPRESS USINAGEM &reg;</span>
+      </a>
+      <button style="display: none;" class="back-button-navbar" type="button" id="navbar-back-button">
+        <i class="bi bi-arrow-left"></i>
+      </button>
+      <button class="navbar-toggler" style="margin-right: 30px;" type="button" id="menu-toggler">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-underline p-3">
+          <li class="nav-item">
+            <a class="nav-link active" id="nav-home" aria-current="page" href="index.html">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-services" href="servicos.html">
+              <i class="fas fa-cogs"></i> Serviços
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-about" href="quemsomos.html">
+              <i class="fas fa-users"></i> Sobre Nós
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-production" href="producao.html">
+              <i class="fas fa-industry"></i> Produção
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-contact" href="contato.html">
+              <i class="fas fa-envelope"></i> Contato
+            </a>
+          </li>
+          <li class="nav-item" style="cursor: pointer;">
+            <a data-bs-toggle="modal" data-bs-target="#orcamentoModal" class="nav-link" id="nav-quote">
+              <i class="fas fa-dollar-sign"></i> Orçamento
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <button id="themeSwitcher" class="btn-per btn btn-outline-light mx-3" onclick="toggleTheme()">
+            <i id="themeIcon" class="bi bi-sun"></i>
+          </button>
+          <div class="dropdown">
+            <button class="btn btn-per btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-translate"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item"  onclick="changeLanguage('pt')">Português</a></li>
+              <li><a class="dropdown-item"  onclick="changeLanguage('es')">Español</a></li>
+              <li><a class="dropdown-item"  onclick="changeLanguage('en')">English</a></li>
+            </ul>
+          </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <ul class="navbar-nav">
+        <div class="back-button" id="back-button">
+            <i class="bi bi-arrow-right"></i> Voltar
+        </div>
+        <br><br>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">
-            <i class="fas fa-home"></i> Página Inicial
+          <a class="nav-link active linkactive nav-link-active"  id="nav-home2" aria-current="page" href="index.html">
+            <i class="fas fa-home"></i> Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="servicos.html">
+          <a class="nav-link" id="nav-services2" href="servicos.html">
             <i class="fas fa-cogs"></i> Serviços
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="quemsomos.html">
+          <a class="nav-link" id="nav-about2" href="quemsomos.html">
             <i class="fas fa-users"></i> Quem Somos
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="producao.html">
+          <a class="nav-link" id="nav-production2" href="producao.html">
             <i class="fas fa-industry"></i> Produção
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contato.html">
+          <a class="nav-link"id="nav-contact2" href="contato.html">
             <i class="fas fa-envelope"></i> Contato
           </a>
         </li>
         <li class="nav-item" style="cursor: pointer;">
-          <a data-bs-toggle="modal" data-bs-target="#orcamentoModal" class="nav-link" id="nav-link">
+          <a data-bs-toggle="modal" data-bs-target="#orcamentoModal" class="nav-link" id="nav-quote2">
             <i class="fas fa-dollar-sign"></i> Orçamento
           </a>
         </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="sidebar" id="sidebar" style="background: linear-gradient(#0099E0);">
-  <ul class="navbar-nav">
-      <div class="back-button" id="back-button">
-          <i class="bi bi-arrow-right"></i> Voltar
+    </ul>
+    <div class="d-flex align-items-center">
+      <button id="themeSwitcher2" class="btn-per btn btn-outline-light mx-3 mt-2" onclick="toggleTheme2()">
+        <i id="themeIcon2" class="bi bi-sun"></i>
+      </button>
+      <div class="dropdown">
+        <button class="btn-per btn btn-outline-light dropdown-toggle mx-2 mt-2" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-translate"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" onclick="changeLanguage('pt')">Português</a></li>
+          <li><a class="dropdown-item" onclick="changeLanguage('es')">Español</a></li>
+          <li><a class="dropdown-item" onclick="changeLanguage('en')">English</a></li>
+        </ul>
       </div>
-      <br><br>
-      <li class="nav-item">
-        <a class="nav-link" style="color: white;" aria-current="page" href="index.html">
-          <i class="fas fa-home"></i> Página Inicial
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="servicos.html">
-          <i class="fas fa-cogs"></i> Serviços
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="quemsomos.html">
-          <i class="fas fa-users"></i> Quem Somos
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="producao.html">
-          <i class="fas fa-industry"></i> Produção
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contato.html">
-          <i class="fas fa-envelope"></i> Contato
-        </a>
-      </li>
-      <li class="nav-item" style="cursor: pointer;">
-        <a data-bs-toggle="modal" data-bs-target="#orcamentoModal" class="nav-link" id="nav-link">
-          <i class="fas fa-dollar-sign"></i> Orçamento
-        </a>
-      </li>
-  </ul>
+  </div>
 </div>
-<!--SCRIPT DO SITE-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src= "js/script.js"></script>
 
 </header>
-  
-  <body>
-  
+<body>
+<!--SCRIPT DO SITE-->
+<script src= "js/script.js"></script>
+<script src= "js/script_home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <!--CARROSSEL-->
-
-<div class="container-fluid w-100 p-0"> <!-- Adicionado classe container-fluid para ocupar toda a largura -->
-  <div style="margin-top: 70px; " id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"> <!--ajustar largura-->
-    <div class="carousel-inner mb-3">
-      <div class="carousel-item active" id="carrossel-item" data-bs-interval="7000">
-        <img src="img/indexprincipal.jpeg" class="d-block w-100" style="object-fit: cover; max-height: 400px;" alt="Foto de um CNC por dentro">
-         <div class="carousel-caption d-block d-md-block">
-          <h3>IRONPRESS - USINAGEM&reg;</h3>
-          <p style="font-family: Arial; font-size: 18px; font-weight: bold;">Prontos para atender bem, para atender sempre!</p>
+ 
+  <div class="container-fluid w-100 p-0"> 
+    <div style="margin-top: 70px;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"> 
+      <div class="carousel-inner mb-3">
+        <div class="carousel-item active" id="carrossel-item" data-bs-interval="7000">
+          <img src="img/indexprincipal.jpeg" class="d-block w-100" style="pointer-events: none; object-fit: cover; max-height: 400px;" alt="Foto de um CNC por dentro">
+           <div class="carousel-caption d-block d-md-block">
+            <h3>IRONPRESS - USINAGEM&reg;</h3>
+            <p id="carousel-caption1" style="font-family: Arial; font-size: 18px; font-weight: bold;">Prontos para atender bem, para atender sempre!</p>
+          </div>
+        </div>
+        <div class="carousel-item" id="carrossel-item" data-bs-interval="7000">
+          <img src="img/indexprincipal2.jpg" class="d-block w-100" style="pointer-events: none; object-fit: cover; max-height: 400px;" alt="Foto de um CNC por dentro">
+           <div class="carousel-caption d-block d-md-block">
+            <h3 id= "carousel-title2">NOSSOS SERVIÇOS</h3>
+            <p id="carousel-caption2" style="font-family: Arial; font-size: 18px; font-weight: bold;">Trabalhamos com Solda, usinagem, torneamento e muito mais!</p>
+          </div>
+        </div>
+        <div class="carousel-item" id="carrossel-item" data-bs-interval="7000">
+          <img src="img/indexprincipal3.jpg" class="d-block w-100" style="pointer-events: none; object-fit: cover; max-height: 400px;" alt="Foto de um CNC por dentro">
+           <div class="carousel-caption d-block d-md-block">
+            <h3 id= "carousel-title3">NOSSA PRODUÇÃO</h3>
+            <p id="carousel-caption3" style="font-family: Arial; font-size: 18px; font-weight: bold;">Produzimos para terceiros com qualidade e compromisso!</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item" id="carrossel-item" data-bs-interval="7000">
-        <img src="img/indexprincipal2.jpg" class="d-block w-100 " style="object-fit: cover; max-height: 400px;" alt="Um soldador trabalhando">
-         <div class="carousel-caption d-block d-md-block">
-          <h4>NOSSOS SERVIÇOS</h4>
-          <p  style="font-family: Arial; font-size: 18px; font-weight: bold;">Trabalhamos com Solda, usinagem, torneamento e muito mais! </p>
-        </div>
-      </div>
-     <div class="carousel-item" id="carrossel-item" data-bs-interval="7000">
-        <img src="img/indexprincipal3.jpg" class="d-block w-100" style="object-fit: cover; max-height: 400px;" alt="Usinando com Precisão">
-         <div class="carousel-caption d-block d-md-block">
-          <h4>NOSSA PRODUÇÃO</h4>
-          <p style="font-family: Arial; font-size: 18px; font-weight: bold;">Produzimos para terceiros com qualidade e compromisso!</p>
-        </div>
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-</div>
 
 
-
-<!--CARDS OBJETIVOS-->
-
-  <h2 style= "text-align: center;">Nossos Serviços</h2>
+  <h2 id="nossos-servicos-index" style= "text-align: center;">Nossos Serviços</h2>
 
  <div class="container w-100 mt-3 mb-3">  
 <div class="row row-cols-1 row-cols-md-3 g-6 mx-0 mb-4 mt-4">
@@ -161,8 +186,8 @@
     <div class="card h-100">
       <img src="img/cncservicos.jpg" style=" max-height: 350px;" class="card-img-top" alt="CNC em execução">
       <div class="card-body">
-        <h5 class="card-title">Usinagem</h5>
-        <p class="card-text "> A usinagem é um método de fabricação que cria objetos de metal, sendo amplamente empregado em setores como automobilística, aeroespacial e eletrônica, resultando em peças de alta precisão e qualidade.</p>
+        <h5 class="card-title" id= "usinagem-h5-index">Usinagem</h5>
+        <p class="card-text" id="usinagem-p-index"> A usinagem é um método de fabricação que cria objetos de metal, sendo amplamente empregado em setores como automobilística, aeroespacial e eletrônica, resultando em peças de alta precisão e qualidade.</p>
       </div>
     </div>
   </div>
@@ -170,8 +195,8 @@
     <div class="card h-100">
       <img src="img/indexservicos2.jpeg"  style="max-height: 350px;" class="card-img-top" alt="Um torno CNC por fora">
       <div class="card-body">
-        <h5 class="card-title">Torneamento</h5>
-        <p class="card-text"> O torneamento é um processo de fabricação que cria objetos cilíndricos com precisão em setores industriais, desde parafusos até eixos complexos, com muita precisão. O torno evoluiu ao longo dos anos e o serviço pode ser feito com os tornos mecânicos, automáticos, e os controlados por CNC.
+        <h5 class="card-title" id="torneamento-h5-index">Torneamento</h5>
+        <p class="card-text" id="torneamento-p-index"> O torneamento é um processo de fabricação que cria objetos cilíndricos com precisão em setores industriais, desde parafusos até eixos complexos, com muita precisão. O torno evoluiu ao longo dos anos e o serviço pode ser feito com os tornos mecânicos, automáticos, e os controlados por CNC.
         </p>
       </div>
     </div>
@@ -180,8 +205,8 @@
     <div class="card h-100">
       <img src="img/furadeira.jpeg" style="max-height: 350px;" class="card-img-top" alt="Estamparia">
       <div class="card-body">
-        <h5 class="card-title">Ferramentaria</h5>
-        <p class="card-text"> A IronPress Usinagem desempenha um papel importante na indústria, dedicando-se à confecção de ferramentas, peças e outros equipamentos utilizados em automações e processos industriais. Assim garantindo alta precisão e excelência na produção, contribuindo para diversos setores.</p>
+        <h5 class="card-title" id="ferramentaria-h5-index">Ferramentaria</h5>
+        <p class="card-text" id="ferramentaria-p-index"> A IronPress Usinagem desempenha um papel importante na indústria, dedicando-se à confecção de ferramentas, peças e outros equipamentos utilizados em automações e processos industriais. Assim garantindo alta precisão e excelência na produção, contribuindo para diversos setores.</p>
       </div>
       </div>
   </div>
@@ -190,10 +215,10 @@
 
 
 <!--PRODUTOS-->
-<div class="container mt-5 mb-5">
-  <div id="carouselCards" class="carousel slide mb-2 mt-2" style="background-color: #f6f6f6;" data-bs-ride="carousel" data-bs-interval="5000">
+<div class="container mt-5 mb-5" >
+  <div id="carouselCards" class="carousel slide mb-2 mt-2 " data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-inner mb-4">
-      <h2 class="mt-2" style="text-align: center;">Catálogo de Produção</h2>
+      <h2 class="mt-2" style="text-align: center;" id="catalogo-produtos-index">Catálogo de Produção</h2>
 
       <!-- Primeiro conjunto de cards -->
       <div class="container w-100 mt-3 mb-3">
@@ -202,13 +227,13 @@
             <!-- Card 1 -->
             <div class="col mx-2">
               <div class="card h-100 card-borda">
-                <img src="img/articulacao.png" style="max-height: 200px; object-fit:cover; object-position: 60% 40%;" class="card-img-top" alt="Uma articulação">
+                <img src="img/articulacao.png" style="max-height: 200px; object-fit:cover; object-position: 60% 40%; pointer-events: none;" class="card-img-top" alt="Uma articulação">
               </div>
             </div>
             <!-- Card 2 -->
             <div class="col mx-2">
               <div class="card h-100 card-borda">
-                <img src="img/peca11.png" style="max-height: 200px; object-fit:contain; object-position: 50% 50%;" class="card-img-top" alt="Varias peças pequenas usinadas com muita precisão">
+                <img src="img/peca11.png" style="max-height: 200px; object-fit:contain; object-position: 50% 50%; pointer-events: none;" class="card-img-top" alt="Varias peças pequenas usinadas com muita precisão">
               </div>
             </div>
           </div>
@@ -220,13 +245,13 @@
             <!-- Card 3 -->
             <div class="col">
               <div class="card h-100 card-borda">
-                <img src="img/tubo.png" style="max-height: 200px;" class="card-img-top" alt="Um tubo usinado">
+                <img src="img/tubo.png" style="max-height: 200px; pointer-events: none;" class="card-img-top" alt="Um tubo usinado">
               </div>
             </div>
             <!-- Card 4 -->
             <div class="col">
               <div class="card h-100 card-borda">
-                <img src="img/pecazinco.png" style="max-height: 200px;" class="card-img-top" alt="Uma peça banhada de zinco">
+                <img src="img/pecazinco.png" style="max-height: 200px; pointer-events: none;" class="card-img-top" alt="Uma peça banhada de zinco">
               </div>
             </div>
           </div>
@@ -238,13 +263,13 @@
             <!-- Card 5 -->
             <div class="col">
               <div class="card h-100 card-borda">
-                <img src="img/rodadetalhada.png" style="max-height: 200px; object-position: 80% 80%;" class="card-img-top" alt="Um tipo de roda muito detalhada e usinada com precisão">
+                <img src="img/rodadetalhada.png" style="max-height: 200px; object-position: 80% 80%; pointer-events: none;" class="card-img-top" alt="Um tipo de roda muito detalhada e usinada com precisão">
               </div>
             </div>
             <!-- Card 6 -->
             <div class="col">
               <div class="card h-100 card-borda">
-                <img src="img/tubodetalhado1.png" style="max-height: 200px; object-position: 40% 50%;" class="card-img-top" alt="Outro tipo de roda ou tubo bem detalhada e usinada com precisão">
+                <img src="img/tubodetalhado1.png" style="max-height: 200px; object-position: 40% 50%; pointer-events: none;" class="card-img-top" alt="Outro tipo de roda ou tubo bem detalhada e usinada com precisão">
               </div>
             </div>
           </div>
@@ -256,13 +281,13 @@
             <!-- Card 7-->
             <div class="col">
               <div class="card h-100 card-borda">
-                <img src="img/peca9.png" style="max-height: 200px;" class="card-img-top" alt="Um tipo de calço coxim">
+                <img src="img/peca9.png" style="max-height: 200px; pointer-events: none;" class="card-img-top" alt="Um tipo de calço coxim">
               </div>
             </div>
             <!-- Card 8 -->
             <div class="col">
               <div class="card h-100 card-borda">
-                <img src="img/pecaroda.png" style="max-height: 200px;" class="card-img-top" alt="Um tipo de peça para encaixe">
+                <img src="img/pecaroda.png" style="max-height: 200px; pointer-events: none;" class="card-img-top" alt="Um tipo de peça para encaixe">
               </div>
             </div>
           </div>
@@ -270,7 +295,7 @@
       </div>
     </div>
     <a href="producao.html">
-      <p class="text-center">Veja mais!</p>
+      <p class="text-center" id="veja-mais-index">Veja mais!</p>
     </a>
   </div>
 </div>
@@ -279,7 +304,7 @@
   .card-borda {
     border: none; /* Sem bordas visíveis */
     transition: opacity 0.3s ease; /* Animação suave para a opacidade */
-    background-color: #f6f6f6;
+    background-color: #ffffff;
   }
 
   /* Efeito de hover para mudar a opacidade */
@@ -295,7 +320,6 @@
   }
 </style>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
   
   
@@ -305,37 +329,37 @@
       <footer class="py-5">
     <div class="row" >
       <div class="col-6 col-md-2 mb-3">
-        <h5>O que Somos</h5>
+        <h5 id="o-que-somos-footer">O que Somos</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Página Inicial</a></li>
-          <li class="nav-item mb-2"><a href="quemsomos.html" class="nav-link p-0 text-body-secondary">Quem Somos</a></li>
-          <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-body-secondary">Contato</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary" id="home-footer">Home</a></li>
+          <li class="nav-item mb-2"><a href="quemsomos.html" class="nav-link p-0 text-body-secondary" id="sobre-nos-footer">Sobre Nós</a></li>
+          <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-body-secondary" id="contato-footer">Contato</a></li>
         </ul>
       </div>
 
       <div class="col-6 col-md-2 mb-3">
-        <h5>O que Fazemos</h5>
+        <h5 id="o-que-fazemos-footer">O que Fazemos</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="servicos.html" class="nav-link p-0 text-body-secondary">Nossos Serviços</a></li>
-          <li class="nav-item mb-2"><a href="producao.html" class="nav-link p-0 text-body-secondary">Nossa Produção</a></li>
+          <li class="nav-item mb-2"><a href="servicos.html" class="nav-link p-0 text-body-secondary" id="nossos-servicos-footer">Nossos Serviços</a></li>
+          <li class="nav-item mb-2"><a href="producao.html" class="nav-link p-0 text-body-secondary" id="nossa-producao-footer">Nossa Produção</a></li>
         </ul>
       </div>
 
       
       <div class="col-md-5 offset-md-1 mb-3">
         <form>
-         <h5>Conte conosco para o que precisar</h5>
-         <p>Faça um orçamento! </p>
+         <h5 id="conte-conosco-footer">Conte conosco para o que precisar</h5>
+         <p id="faça-orcamento-footer">Faça um orçamento! </p>
       <div class="d-flex flex-column flex-sm-row w-100 gap-2">
          
-         <button  data-bs-toggle="modal" data-bs-target="#orcamentoModal" class="btn btn-warning" type="button">Orçamento</button>
+         <button  data-bs-toggle="modal" data-bs-target="#orcamentoModal" class="btn btn-warning" type="button" id="botao-orcamento-footer">Orçamento</button>
         
       </div>
         </form>
       </div>
 
                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                    <p>&copy; 2024 IRONPRESS USINAGEM&reg;. Todos os direitos reservados</p>
+                    <p id= "direitos-footer">&copy; 2024 IRONPRESS USINAGEM&reg;. Todos os direitos reservados</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a  target="_blank" rel="external" class="link-body-emphasis" href="https://www.instagram.com/ironpressusinagem/"><img src="img/instaicon.png" alt="Instagram" width="24" height="24"></a></li>
                         <li class="ms-3"><a  target="_blank" rel="external" class="link-body-emphasis" href="https://www.facebook.com/profile.php?id=61555614025941&mibextid=ZbWKwL"><img src="img/facebookicon.png" alt="Facebook" width="24" height="24"></a></li>
@@ -364,7 +388,7 @@
                 </ul>
             </div>
             <div class="modal-footer" style="border-top: none;">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-secondary"id="botao-fechar-footer-2" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>
     </div>
@@ -384,7 +408,7 @@
                       <a href="orcamento.html">
                         <img src="img/google icon.png" alt="Opção Google Forms" width="70" height="70" style="border-radius: 50%;">
                       </a>
-                      <p class="text-center mt-2" style="text-decoration: none; color: black;">Formulário</p>
+                      <p class="text-center mt-2" style="text-decoration: none; color: black;">Forms</p>
                   </div>
                   <div class="col-6 col-md-3 mt-2 mb-1">
                       <a href="mailto:ironpressusinagem@gmail.com?subject=Assunto Desejado" target="_blank">
@@ -407,7 +431,7 @@
               </div>
           </div>
           <div class="modal-footer" style="background-color: #f6f6f6;">
-              <button type="button" class="btn"  style="background-color: #4286f4; color: white;" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" class="btn"  style="background-color: #4286f4; color: white;" id="botao-fechar-footer" data-bs-dismiss="modal">Fechar</button>
           </div>
       </div>
   </div>
@@ -420,6 +444,4 @@
   </footer>
 </div>
 </div>
-
-
 </html>
