@@ -93,3 +93,19 @@
       backButton.classList.remove('active');
   });
   
+
+ // Função para verificar se os elementos estão visíveis na viewport
+ function checkVisibility() {
+  const sections = document.querySelectorAll('.fade-in-section');
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      section.classList.add('visible');
+    }
+  });
+}
+
+// Verificar visibilidade ao carregar a página
+window.addEventListener('load', checkVisibility);
+// Verificar visibilidade ao rolar a página
+window.addEventListener('scroll', checkVisibility);

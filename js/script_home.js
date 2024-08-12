@@ -226,4 +226,3 @@ function changeLanguage(lang) {
 
 
 }
-

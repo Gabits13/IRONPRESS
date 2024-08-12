@@ -10,6 +10,54 @@ body{
       font-weight: bolder;
     }
 
+    /* Esconder elementos por padrão */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(150px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+
+    /* Tornar elementos visíveis quando estiverem na viewport */
+    .fade-in-section.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .fade-in-section-x {
+      opacity: 0;
+      transform: translateX(200px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+
+    /* Tornar elementos visíveis quando estiverem na viewport */
+    .fade-in-section-x.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .card-borda {
+      border: none; /* Sem bordas visíveis */
+      transition: opacity 0.3s ease; /* Animação suave para a opacidade */
+      background-color: #ffffff;
+    }
+
+    /* Efeito de hover para mudar a opacidade */
+    .card:hover {
+      opacity: 0.8; /* Define a opacidade quando o mouse passa */
+    }
+
+    .custom-color {
+      transition: opacity 0.3s ease;
+    }
+
+    .custom-color:hover {
+      background: linear-gradient(to top, #42d6ff, #0099E0);
+      opacity: 0.6;
+    }
+
+  
+
+
    /*MODO ESCURO*/
 
    /**/
