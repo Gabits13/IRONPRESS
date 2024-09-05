@@ -14,7 +14,7 @@ body{
     .fade-in-section {
       opacity: 0;
       transform: translateY(150px);
-      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      transition: opacity 1.5s ease-out, transform 1s ease-out;
     }
 
     /* Tornar elementos visíveis quando estiverem na viewport */
@@ -23,14 +23,25 @@ body{
       transform: none;
     }
 
-    .fade-in-section-x {
+    .fade-in-sectionx {
       opacity: 0;
-      transform: translateX(200px);
-      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      transform: translateX(-400px);
+      transition: opacity 1.5s ease-out, transform 1.5s ease-out;
     }
 
     /* Tornar elementos visíveis quando estiverem na viewport */
-    .fade-in-section-x.visible {
+    .fade-in-sectionx.visible {
+      opacity: 1;
+      transform: none;
+    }
+    .fade-in-sectionx2 {
+      opacity: 0;
+      transform: translateX(400px);
+      transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    }
+
+    /* Tornar elementos visíveis quando estiverem na viewport */
+    .fade-in-sectionx2.visible {
       opacity: 1;
       transform: none;
     }
