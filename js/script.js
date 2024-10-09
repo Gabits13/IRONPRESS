@@ -69,29 +69,40 @@
   
   });
   
-      //logica do botao menu hamburguer
+   // Lógica do botão menu hamburguer
+document.getElementById('menu-toggler').addEventListener('click', function () {
+  var sidebar = document.getElementById('sidebar');
+  var backButton = document.getElementById('back-button');
+  sidebar.classList.toggle('active');
+  backButton.classList.toggle('active');
+});
 
-  document.getElementById('menu-toggler').addEventListener('click', function () {
-      var sidebar = document.getElementById('sidebar');
-      var backButton = document.getElementById('back-button');
-      sidebar.classList.toggle('active');
-      backButton.classList.toggle('active');
-  });
-  
+// Lógica do botão "Voltar" no menu (back-button)
+document.getElementById('back-button').addEventListener('click', function () {
+  var sidebar = document.getElementById('sidebar');
+  var backButton = document.getElementById('back-button');
+  sidebar.classList.remove('active');
+  backButton.classList.remove('active');
+});
 
+// Fecha o menu ao clicar fora da sidebar
+document.addEventListener('click', function(event) {
+  var sidebar = document.getElementById('sidebar');
+  var menuToggler = document.getElementById('menu-toggler');
+  var backButton = document.getElementById('back-button');
 
-  document.getElementById('navbar-back-button').addEventListener('click', function () {
-      window.history.back();
-  });
-  
-
-
-  document.getElementById('back-button').addEventListener('click', function () {
-      var sidebar = document.getElementById('sidebar');
-      var backButton = document.getElementById('back-button');
+  // Verifica se o clique foi fora da sidebar e do botão de menu
+  if (!sidebar.contains(event.target) && !menuToggler.contains(event.target) && sidebar.classList.contains('active')) {
       sidebar.classList.remove('active');
       backButton.classList.remove('active');
-  });
+  }
+});
+
+// Lógica do botão "Voltar" do navegador (navbar-back-button)
+document.getElementById('navbar-back-button').addEventListener('click', function () {
+  window.history.back();
+});
+
   
 
  // Função para verificar se os elementos estão visíveis na viewport
