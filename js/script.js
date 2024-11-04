@@ -143,3 +143,5 @@ window.addEventListener('load', checkVisibility3);
 window.addEventListener('scroll', checkVisibility);
 window.addEventListener('scroll', checkVisibility2);
 window.addEventListener('scroll', checkVisibility3);
+
+

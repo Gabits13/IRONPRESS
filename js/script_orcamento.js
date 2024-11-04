@@ -1,3 +1,18 @@
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+
+      
+
+
 const translations = {
     'pt': {
   
@@ -33,7 +48,7 @@ const translations = {
   
            //pagina orcamento
            'texto_capa_orcamento': 'Qualidade que você pode confiar! Conte conosco para seus projetos',
-          // 'google_form_iframe' : ' <iframe id="google-form-iframe" width="100%" frameborder="0" marginheight="0" marginwidth="0" style="overflow-x: hidden; overflow-y: hidden;" allowfullscreen src="https://docs.google.com/forms/d/e/1FAIpQLSe2YbMcRXg6hL2yBYYEsFOlfHieZC8HEkTAdUIBGBsTZQ_18g/viewform?usp=sf_link">Carregando... Se não estiver aparecendo, certifique-se de estar conectado à internet ou verifique se sua conexão está fraca.</iframe>',
+       
            
     },
     'es': {
@@ -71,7 +86,7 @@ const translations = {
   
            //pagina orcamento
            'texto_capa_orcamento': '¡Calidad en la que puedes confiar! Cuenta con nosotros para tus proyectos.',
-          // 'google_form_iframe' : ' <iframe id="google-form-iframe" width="100%" frameborder="0" marginheight="0" marginwidth="0" style="overflow-x: hidden; overflow-y: hidden;" allowfullscreen src="https://docs.google.com/forms/d/e/1FAIpQLSd_mX1Br_04aX-V44kB2J91YGu0ELCG7d2UODCqkVUop-C2Sg/viewform?usp=sf_link">Espere un momento... Si no carga, revisa tu conexión a Internet.</iframe>',
+        
     },
     'en': {
   
@@ -108,17 +123,12 @@ const translations = {
   
       //pagina orcamento
     'texto_capa_orcamento': 'Quality you can trust! Count on us for your projects.',
-   // 'google_form_iframe' : ' <iframe id="google-form-iframe" width="100%" frameborder="0" marginheight="0" marginwidth="0" style="overflow-x: hidden; overflow-y: hidden;" allowfullscreen src="https://docs.google.com/forms/d/e/1FAIpQLSe2YbMcRXg6hL2yBYYEsFOlfHieZC8HEkTAdUIBGBsTZQ_18g/viewform?usp=sf_link">Please wait... If it doesn&apos;t load, check your internet connection.</iframe>',
+
 
   
     }
   };
   
-  const iframeUrls = {
-    'pt': 'https://docs.google.com/forms/d/e/1FAIpQLSe2YbMcRXg6hL2yBYYEsFOlfHieZC8HEkTAdUIBGBsTZQ_18g/viewform?usp=sf_link',
-    'en': 'https://docs.google.com/forms/d/e/1FAIpQLSch7Q74b5Mp6lSV08fubRetUr-fQrFYABvcU4JJSl22xj-7xQ/viewform?usp=sf_link',
-    'es': 'https://docs.google.com/forms/d/e/1FAIpQLSd_mX1Br_04aX-V44kB2J91YGu0ELCG7d2UODCqkVUop-C2Sg/viewform?usp=sf_link'
-  };
   
   function changeLanguage(lang) {
   
@@ -163,13 +173,11 @@ const translations = {
   
     //pagina orcamento
     document.getElementById('texto-capa-orcamento').textContent = translations[lang].texto_capa_orcamento;
-    //document.getElementById('google-form-iframe').innerHTML = translations[lang].google_form_iframe;
 
-      // Encontrar o iframe pelo ID
-  const iframe = document.getElementById('google-form-iframe');
 
-  // Atualizar o src do iframe com a URL correspondente
-  iframe.src = iframeUrls[lang];
+      
+
+
 
   
   }
