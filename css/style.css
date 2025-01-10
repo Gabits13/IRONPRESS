@@ -358,6 +358,42 @@ body{
     }
 }
 
+/* Barra de rolagem personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0179b1, #2f96b3); 
+  border-radius: 10px; 
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2f96b3, #0179b1); 
+}
+
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 10px; 
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Barra de rolagem no modo escuro */
+.dark-mode ::-webkit-scrollbar-track {
+  background: #000000; 
+  box-shadow: inset 0 0 5px rgba(90, 90, 90, 0.3);
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0179b1, #2f96b3);
+
+}
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2f96b3, #0179b1); 
+}
+
+
 
 
 
