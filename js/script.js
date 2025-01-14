@@ -13,7 +13,7 @@ function setupGoogleTranslate() {
       "native_language_names": true,
       "detect_browser_language": true,
       "auto_redirect": true,
-      "languages": ["pt", "es", "en"], // Idiomas disponíveis
+      "languages": ["pt", "es", "en"],
       "globe_color": "#66aaff",
       "wrapper_selector": ".gtranslate_wrapper",
       "horizontal_position": "left",
