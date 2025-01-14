@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sobre Nós - IRONPRESS</title>
+    <title translate="no">Sobre Nós - IRONPRESS</title>
     <link rel="shortcut icon" href="img/icocavaco2.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="container w-100 p-0 mt-0 mb-0">
       <a class="navbar-brand" href="index.html" id="logo-texto" style="font-family: Arial; font-size: 14px; font-weight: bold;">
         <img src="img/logocavaco.png" alt="Logo da Empresa" width="70" height="50" class="d-inline-block align-text-center">
-        <span>IRONPRESS USINAGEM &reg;</span>
+        <span translate="no">IRONPRESS USINAGEM &reg;</span>
       </a>
       <button style="display: none;" class="back-button-navbar" type="button" id="navbar-back-button">
         <i class="bi bi-arrow-left"></i>
@@ -29,7 +29,7 @@
         <ul class="navbar-nav nav-underline p-3">
           <li class="nav-item">
             <a class="nav-link " id="nav-home" aria-current="page" href="index.html">
-              <i class="fas fa-home"></i> Home
+              <i class="fas fa-home"></i><span translate="no">Home</span>
             </a>
           </li>
           <li class="nav-item">
@@ -62,16 +62,6 @@
           <button id="themeSwitcher" class="btn-per btn btn-outline-light mx-3" onclick="toggleTheme()">
             <i id="themeIcon" class="bi bi-sun"></i>
           </button>
-          <div class="dropdown">
-            <button class="btn btn-per btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="bi bi-translate"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-              <li><a class="dropdown-item"  onclick="changeLanguage('pt')">Português</a></li>
-              <li><a class="dropdown-item"  onclick="changeLanguage('es')">Español</a></li>
-              <li><a class="dropdown-item"  onclick="changeLanguage('en')">English</a></li>
-            </ul>
-          </div>
       </div>
       </div>
     </div>
@@ -85,7 +75,7 @@
         <br><br>
         <li class="nav-item">
           <a class="nav-link "  id="nav-home2" aria-current="page" href="index.html">
-            <i class="fas fa-home"></i> Home
+            <i class="fas fa-home"></i><span translate="no">Home</span>
           </a>
         </li>
         <li class="nav-item">
@@ -118,24 +108,20 @@
       <button id="themeSwitcher2" class="btn-per btn btn-outline-light mx-3 mt-2" onclick="toggleTheme2()">
         <i id="themeIcon2" class="bi bi-sun"></i>
       </button>
-      <div class="dropdown">
-        <button class="btn-per btn btn-outline-light dropdown-toggle mx-2 mt-2" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="bi bi-translate"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-          <li><a class="dropdown-item" onclick="changeLanguage('pt')">Português</a></li>
-          <li><a class="dropdown-item" onclick="changeLanguage('es')">Español</a></li>
-          <li><a class="dropdown-item" onclick="changeLanguage('en')">English</a></li>
-        </ul>
-      </div>
   </div>
 </div>
 
 </header>
 <body>
+
+  <!-- API DE TRADUÇÃO DO GOOGLE -->
+<div class="gtranslate_wrapper"></div>
+
+<!-- Incluindo o script do Google Translate -->
+<script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+
 <!--SCRIPT DO SITE-->
-<script src= "js/script.js"></script>
-<script src= "js/script_qsomos.js"></script>
+<script src= "js/script.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
   <!-- IMAGEM INICIAL -->
@@ -145,8 +131,8 @@
    <!--QUEM SOMOS??-->
   <div class="container w-100 mt-3 mb-3  fade-in-section">
  <div class="container mt-4 mb-5">
-    <h2 id="title-ironpress-qsomos" class="mb-4">O que é a <b><i>IRONPRESS</i></b>?</h2>
-    <p id="texto-ironpress-qsomos" style="font-size: 24px; text-align: justify;  hyphens: auto; -webkit-hyphens: auto; word-spacing: -0.05em;"> Somos a <i>IronPress</i>, uma referência em precisão e excelência na fabricação de peças usinadas para uma variedade de aplicações, atendendo tanto o setor automotivo quanto outras indústrias. Nosso compromisso com a qualidade e precisão é o alicerce sobre o qual construímos nossa reputação. Mesmo sendo de pequeno-médio porte, nossa experiência abrange uma ampla gama de componentes, desde partes automotivas até peças para outras aplicações industriais, todas produzidas com comprometimento e com excelência. Estamos dedicados a oferecer soluções sob medida atendendo às demandas únicas de cada projeto e garantindo a satisfação de nossos clientes, seja para um protótipo inovador ou para produção em pequena ou média escala. Estamos prontos para colaborar oferecendo precisão, confiabilidade e qualidade em cada peça que produzimos. </p>
+    <h2 id="title-ironpress-qsomos" class="mb-4">O que é a  <b><i translate="no">IRONPRESS</i></b>?</h2>
+    <p id="texto-ironpress-qsomos" style="font-size: 24px; text-align: justify;  hyphens: auto; -webkit-hyphens: auto; word-spacing: -0.05em;"> Somos a  <i translate="no">IronPress</i>,  uma referência em precisão e excelência na fabricação de peças usinadas para uma variedade de aplicações, atendendo tanto o setor automotivo quanto outras indústrias. Nosso compromisso com a qualidade e precisão é o alicerce sobre o qual construímos nossa reputação. Mesmo sendo de pequeno-médio porte, nossa experiência abrange uma ampla gama de componentes, desde partes automotivas até peças para outras aplicações industriais, todas produzidas com comprometimento e com excelência. Estamos dedicados a oferecer soluções sob medida atendendo às demandas únicas de cada projeto e garantindo a satisfação de nossos clientes, seja para um protótipo inovador ou para produção em pequena ou média escala. Estamos prontos para colaborar oferecendo precisão, confiabilidade e qualidade em cada peça que produzimos. </p>
 </div>
 </div>
 
@@ -272,7 +258,7 @@
       <div class="col-6 col-md-2 mb-3">
         <h5 id="o-que-somos-footer" class="fade-in-section">O que Somos</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="index.html" class="fade-in-section nav-link p-0 text-body-secondary" id="home-footer">Home</a></li>
+          <li class="nav-item mb-2"><a href="index.html" class="fade-in-section nav-link p-0 text-body-secondary" id="home-footer" translate="no">Home</a></li>
           <li class="nav-item mb-2"><a href="#" class="fade-in-section nav-link p-0 text-body-secondary" id="sobre-nos-footer">Sobre Nós</a></li>
           <li class="nav-item mb-2"><a href="contato.html" class="fade-in-section nav-link p-0 text-body-secondary" id="contato-footer">Contato</a></li>
         </ul>
@@ -300,7 +286,7 @@
       </div>
 
              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                  <p id= "direitos-footer">&copy; 2024 IRONPRESS USINAGEM&reg;. Todos os direitos reservados</p>
+                  <p id= "direitos-footer"><span translate="no">&copy; 2024 IRONPRESS USINAGEM&reg;</span>. Todos os direitos reservados</p>
                   <ul class="list-unstyled d-flex">
                       <li class="ms-3"><a  target="_blank" rel="external" class="link-body-emphasis" href="https://www.instagram.com/ironpressusinagem/"><img src="img/instaicon.png" alt="Instagram" width="24" height="24"></a></li>
                       <li class="ms-3"><a  target="_blank" rel="external" class="link-body-emphasis" href="https://www.facebook.com/profile.php?id=61555614025941&mibextid=ZbWKwL"><img src="img/facebookicon.png" alt="Facebook" width="24" height="24"></a></li>
