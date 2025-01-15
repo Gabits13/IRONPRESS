@@ -486,7 +486,7 @@ body{
 .form-orcamento .container input {
   background-color: #eee;
   border: none;
-  margin: 8px 0;
+  margin: 5px 0px 0px 0px;
   padding: 10px 15px;
   font-size: 13px;
   border-radius: 8px;
@@ -497,7 +497,7 @@ body{
 .input-box textarea {
   background-color: #eee;
   border: none;
-  margin: 8px 0;
+  margin: 0px 0;
   padding: 10px 15px;
   font-size: 13px;
   border-radius: 8px;
@@ -724,7 +724,7 @@ body{
 .dark-mode .form-orcamento .container input {
   background-color: #a3a3a3;
   border: none;
-  margin: 8px 0;
+  margin: 5px 0px 0px 0px;
   padding: 10px 15px;
   font-size: 13px;
   border-radius: 8px;
@@ -735,6 +735,7 @@ body{
 
 .dark-mode .form-orcamento .container textarea {
   background-color: #a3a3a3;
+  margin: 0px 0;
 
 }
 
@@ -769,6 +770,26 @@ body{
       margin-top: -5rem;
       margin-bottom: 1rem;
   }
+}
+
+/* Removendo margens extras de cima e embaixo dos spans */
+#span-form1, #span-form2, #nome-error, #email-error, #phone-error, #message-error {
+  margin-top: 1px;  /* Margem superior pequena */
+  margin-bottom: 1px;  /* Margem inferior pequena */
+  display: inline-block; /* Garante que o span ocupe apenas o espaço necessário */
+}
+
+/* Estilo para a mensagem de erro */
+.error-message {
+  font-size: 0.875rem;  /* Tamanho menor da fonte */
+  color: red;  /* Cor vermelha para mensagens de erro */
+  display: none;  /* Oculta a mensagem de erro por padrão */
+  margin-top: 5px; /* Pequeno espaçamento entre o campo e a mensagem */
+}
+
+/* Exibe a mensagem de erro quando o campo for inválido */
+.input-box.invalid .error-message {
+  display: block;
 }
 
 

@@ -1,5 +1,4 @@
-   
-    //api tradução, usando cookies
+   //api tradução, usando cookies
     // Função para configurar o Google Translate e garantir que o idioma seja salvo
 function setupGoogleTranslate() {
   // Recupera o idioma salvo no cookie ou define 'pt' como padrão
@@ -47,7 +46,6 @@ function setupGoogleTranslate() {
 // Chama a função de configuração
 setupGoogleTranslate();
 
-  
     
   document.addEventListener("DOMContentLoaded", function() {
 
@@ -195,31 +193,137 @@ registerBtn.addEventListener('click', () => {
 });
 
 loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
+    container.classList.remove("active"); 
 });
 
-//modal confirmação
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form[action='https://api.staticforms.xyz/submit']");
+  const nomeInput = document.getElementById("nome");
+  const emailInput = document.getElementById("email");
+  const phoneInput = document.getElementById("phone");
+  const messageInput = document.getElementById("message");
+  const btnEnviar = document.getElementById("btn-enviar");
+  const errorMessages = {
+    nome: document.getElementById("nome-error"),
+    email: document.getElementById("email-error"),
+    phone: document.getElementById("phone-error"),
+    message: document.getElementById("message-error"),
+  };
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+  // Função para validar o formulário e exibir mensagens de erro
+  function validarFormulario() {
+    let valid = true;
+    
+    // Validando nome
+    if (nomeInput.value.trim() === "") {
+      valid = false;
+      mostrarErro(nomeInput, errorMessages.nome, "Nome é obrigatório!");
+    } else {
+      limparErro(nomeInput, errorMessages.nome);
+    }
 
-    // Mostra o modal de sucesso
-    const successModal = new bootstrap.Modal(document.getElementById("successModal"));
-    successModal.show();
+    // Validando email
+    if (!emailValido(emailInput.value)) {
+      valid = false;
+      mostrarErro(emailInput, errorMessages.email, "Por favor, insira um email válido!");
+    } else {
+      limparErro(emailInput, errorMessages.email);
+    }
 
-    // Redireciona para a página inicial após 6 segundos
-    setTimeout(() => {
-      window.location.href = "https://ironpressusinagem.com.br/index.html";
-    }, 6000);
+    // Validando telefone
+    if (!phoneValido(phoneInput.value)) {
+      valid = false;
+      mostrarErro(phoneInput, errorMessages.phone, "O telefone não pode conter letras!");
+    } else {
+      limparErro(phoneInput, errorMessages.phone);
+    }
 
-    // Botão para redirecionamento imediato
-    document.getElementById("redirectNow").addEventListener("click", function () {
-      window.location.href = "https://ironpressusinagem.com.br/index.html";
-    });
+    // Validando mensagem
+    if (messageInput.value.trim() === "") {
+      valid = false;
+      mostrarErro(messageInput, errorMessages.message, "Mensagem é obrigatória!");
+    } else {
+      limparErro(messageInput, errorMessages.message);
+    }
+
+    return valid;
+  }
+
+  // Função para exibir a mensagem de erro
+  function mostrarErro(input, errorElement, message) {
+    input.closest(".input-box").classList.add("invalid");
+    errorElement.textContent = message;
+  }
+
+  // Função para limpar a mensagem de erro
+  function limparErro(input, errorElement) {
+    input.closest(".input-box").classList.remove("invalid");
+    errorElement.textContent = "";
+  }
+
+  // Função para verificar se o email tem o formato correto
+  function emailValido(email) {
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regex.test(email);
+  }
+
+  // Função para validar o telefone e garantir que não contenha letras
+  function phoneValido(phone) {
+    const regex = /^[0-9\s\(\)\-]+$/; // Permite números, espaços, parênteses e traços
+    return regex.test(phone);
+  }
+
+  // Habilita ou desabilita o botão de enviar com base na validação
+  function atualizarBotaoEnviar() {
+    if (validarFormulario()) {
+      btnEnviar.disabled = false;
+    } else {
+      btnEnviar.disabled = true;
+    }
+  }
+
+  // Monitorando mudanças nos campos para atualizar o botão de enviar
+  nomeInput.addEventListener("input", atualizarBotaoEnviar);
+  emailInput.addEventListener("input", atualizarBotaoEnviar);
+  phoneInput.addEventListener("input", atualizarBotaoEnviar);
+  messageInput.addEventListener("input", atualizarBotaoEnviar);
+
+  // Evento para quando o botão de enviar for clicado
+  btnEnviar.addEventListener("click", function (event) {
+    event.preventDefault(); // Previne o envio do formulário
+
+    if (validarFormulario()) {
+      const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+      successModal.show();
+
+      // Enviar automaticamente os dados após 5 segundos ou quando o usuário clicar no botão "Ir Agora"
+      setTimeout(function () {
+        enviarFormulario();
+      }, 5000);
+
+      document.getElementById("redirectNow").addEventListener("click", function () {
+        enviarFormulario();
+      });
+
+      document.getElementById("closeModalButton").addEventListener("click", function () {
+        enviarFormulario();
+      });
+    }
   });
+
+  // Função que envia os dados do formulário
+  function enviarFormulario() {
+    const form = document.getElementById("orcamentoForm");
+    form.submit(); // Submete o formulário
+  }
+
+  // Chama a função de atualização de botão quando a página for carregada
+  atualizarBotaoEnviar();
 });
+
+
+//corrige uma coisa e aparece mil outros erros, pelo menos ta sem gambiarra agora :)
+
+
 
 
 

@@ -145,7 +145,7 @@
     
   }          
   </style>
-<div class="form-orcamento mx-2 mt-0 mb-2">
+<div class="form-orcamento mx-2 mt-0 mb-2"> 
   <div class="container fade-in-section" id="container">
       <div class="form-container sign-up col-12 col-md-6">
           <form>
@@ -159,24 +159,28 @@
           </form>
       </div>
       <div class="form-container sign-in col-12 col-md-6">
-          <form action="https://api.staticforms.xyz/submit" method="post">
-              <input type="hidden" name="accessKey" value="ec9a4a30-285c-41e7-bf63-465ec334a843">
+          <form id="orcamentoForm" action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="ec9a4a30-285c-41e7-bf63-465ec334a843">
               <h1 class="mb-3 mt-4" id="h1-form-orcamento-esq">Orçamento</h1>
               <span id="span-form2">Preencha as informações para solicitar um orçamento!</span>
               <div class="input-box">
                   <input type="text" class="form-control" placeholder="Nome" id="nome" name="name" autocomplete="off" required>
+                  <span id="nome-error" class="error-message"></span>
               </div>
               <div class="input-box">
                   <input type="email" class="form-control" placeholder="Email" id="email" name="email" autocomplete="on" required>
+                  <span id="email-error" class="error-message"></span>
               </div>
               <div class="input-box">
                   <input type="tel" class="form-control" placeholder="(XX) 9XXXX-XXXX" id="phone" name="phone"  autocomplete="on">
+                  <span id="phone-error" class="error-message"></span>
               </div>
               <div class="input-box">
                   <textarea class="form-control" placeholder="Digite sua mensagem..." id="message" name="message" rows="4" autocomplete="off" required></textarea>
+                  <span id="message-error" class="error-message"></span>
               </div>
               <input type="hidden" name="redirectTo" value="https://ironpressusinagem.com.br/index.html">
-              <button type="submit" name="btnenviar" id="btn-enviar" class="btn btn-primary w-100 mt-3 mb-3">Enviar</button>
+              <button type="button" title="Preencha todos os campos para enviar o formulário" id="btn-enviar" class="btn btn-primary w-100 mt-3 mb-3">Enviar</button>
           </form>
       </div>
       <div class="toggle-container col-12">
@@ -206,7 +210,7 @@
     <div class="modal-content bg-dark text-white">
       <div class="modal-header border-secondary">
         <h5 class="modal-title" id="successModalLabel">Mensagem Enviada!</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" id="closeModalButton"></button>
       </div>
       <div class="modal-body">
         Logo estaremos entrando em contato. Você será redirecionado para a página inicial em breve.
@@ -218,9 +222,7 @@
   </div>
 </div>
 
-
-
-	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
