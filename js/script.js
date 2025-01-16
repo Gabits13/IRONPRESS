@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validando nome
     if (nomeInput.value.trim() === "") {
       valid = false;
-      mostrarErro(nomeInput, errorMessages.nome, "Nome é obrigatório!");
+      mostrarErro(nomeInput, errorMessages.nome, "Obrigatório!");
     } else {
       limparErro(nomeInput, errorMessages.nome);
     }
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validando email
     if (!emailValido(emailInput.value)) {
       valid = false;
-      mostrarErro(emailInput, errorMessages.email, "Por favor, insira um email válido!");
+      mostrarErro(emailInput, errorMessages.email, "Insira um email válido!");
     } else {
       limparErro(emailInput, errorMessages.email);
     }
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validando telefone
     if (!phoneValido(phoneInput.value)) {
       valid = false;
-      mostrarErro(phoneInput, errorMessages.phone, "O telefone não pode conter letras!");
+      mostrarErro(phoneInput, errorMessages.phone, "Sem uso de letras!");
     } else {
       limparErro(phoneInput, errorMessages.phone);
     }
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Validando mensagem
     if (messageInput.value.trim() === "") {
       valid = false;
-      mostrarErro(messageInput, errorMessages.message, "Mensagem é obrigatória!");
+      mostrarErro(messageInput, errorMessages.message, "Obrigatório!");
     } else {
       limparErro(messageInput, errorMessages.message);
     }

@@ -788,7 +788,7 @@ body{
 }
 
   .form-orcamento .container{
-      margin-top: -20rem;
+      margin-top: -15rem;
       margin-bottom: 0rem;
   }
 }
@@ -813,10 +813,72 @@ body{
   display: block;
 }
 
+@media(max-width: 800px){
+  .form-orcamento .container h2{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      margin-top: 5rem;
+  }
+  
+  .form-orcamento .container p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+  .form-orcamento .container{
+      margin-top: -10rem;
+      margin-bottom: 0rem;
+  }
 
 
+/* Removendo margens extras de cima e embaixo dos spans */
+#span-form1, #span-form2, #nome-error, #email-error, #phone-error, #message-error {
+  margin-top: 0px;  /* Margem superior pequena */
+  margin-bottom: 0px;  /* Margem inferior pequena */
+  display: inline-block; /* Garante que o span ocupe apenas o espaço necessário */
+}
 
+/* Estilo para a mensagem de erro */
+.error-message {
+  font-size: 0.rem;  /* Tamanho menor da fonte */
+  color: red;  /* Cor vermelha para mensagens de erro */
+  display: none;  /* Oculta a mensagem de erro por padrão */
+  margin-top: 2px; /* Pequeno espaçamento entre o campo e a mensagem */
+}
 
+/* Exibe a mensagem de erro quando o campo for inválido */
+.input-box.invalid .error-message {
+  display: block;
+}
+}
+
+@media(max-width: 420px){
+  .form-orcamento .container h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.form-orcamento .container p{
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+
+.form-orcamento .container{
+    margin-top: -15rem;
+    margin-bottom: 0rem;
+}
+
+.footer{
+  margin-top: 90rem;
+}
+}
 
 
 
