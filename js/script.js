@@ -321,13 +321,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//corrige uma coisa e aparece mil outros erros, pelo menos ta sem gambiarra agora :)
 
-
-
-
-
-
+//função antiga
 /* // Função para carregar a linguagem preferida ao carregar a página
     function loadPreferredLanguage() {
       const preferredLanguage = localStorage.getItem('preferredLanguage') || 'pt';

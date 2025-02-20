@@ -200,6 +200,37 @@
     </div>
   </div>
 
+
+  <!--NOVIDADES-->
+
+ <!-- <h2 id="nossos-servicos-index" class="fade-in-section" style="text-align: center;"></h2>
+
+  <div class="container w-100 mt-3 mb-3">  
+    <div class="row row-cols-1 row-cols-md-2 g-6 mx-0 mb-4 mt-4">
+      <div class="col mb-3 fade-in-section">
+        <div class="card h-100">
+          <img src="img/cncservicos.jpg" style="max-height: 350px;" class="card-img-top" alt="CNC em execução">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 26px;" id= "usinagem-h5-index">Expansão da área da Metalurgica.</h5>
+            <p class="card-text" style="font-size: 22px; text-align: justify;  hyphens: auto; -webkit-hyphens: auto; word-spacing: -0.05em;" id="usinagem-p-index"> A usinagem é um método de fabricação que cria objetos de metal, sendo amplamente empregado em setores como automobilística, aeroespacial e eletrônica, resultando em peças de alta precisão e qualidade.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-3 fade-in-section">
+        <div class="card h-100">
+          <img src="img/indexservicos2.jpeg" style="max-height: 350px;" class="card-img-top" alt="Um torno CNC por fora">
+          <div class="card-body">
+            <h5 class="card-title" style="font-size: 26px;" id="torneamento-h5-index">Mais CNCS!</h5>
+            <p class="card-text" style="font-size: 22px; text-align: justify;  hyphens: auto; -webkit-hyphens: auto; word-spacing: -0.05em;" id="torneamento-p-index"> O torneamento é um processo de fabricação que cria objetos cilíndricos com precisão em setores industriais, desde parafusos até eixos complexos, com muita precisão. O torno evoluiu ao longo dos anos e o serviço pode ser feito com os tornos mecânicos, automáticos, e os controlados por CNC.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
 <!--PRODUTOS-->
 <div class="container mt-5 mb-5 fade-in-section" >
   <div id="carouselCards" class="carousel slide mb-2 mt-2 " data-bs-ride="carousel" data-bs-interval="5000">
@@ -305,6 +336,58 @@
     opacity: 0.6;
   }
 </style>
+
+
+<button id="btn-novidades" class="btn btn-primary rounded-circle position-fixed" style="bottom: 20px; right: 20px; width: 60px; height: 60px; z-index: 1000;">
+  <i class="bi bi-megaphone-fill"></i>
+</button>
+
+<div style="backdrop-filter: blur(5px);" class="modal fade" id="novidadesModal" tabindex="-1" aria-labelledby="novidadesModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-m">
+    <div style="background-color: #24292e;" class="modal-content">
+      <div class="modal-header">
+        <h3 style="color: white;" class="modal-title" id="novidadesModalLabel">Novidades!</h3>
+        <button style="color: white;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="novidades-container">
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const novidades = [
+                {
+                  titulo: "Temos mais CNCS!",
+                  imagem: "img/img-modal-novidades1.jpg",
+                  descricao: "Para esse ano de 2025, Nossa empresa remanejou a fábrica e fizemos uma singela mudança que permitiu uma significativa transformação em nosso espaço. Com essa mudança, agora temos espaço para mais 2 CNCS. Nesse momento contamos com 7 deles em nossa fábrica. O que nos permite servir melhor e contar com uma evolução em nossa produção e no que somos capazes de fazer em menos tempo!" 
+                }
+              ];
+            
+              const novidadesContainer = document.getElementById("novidades-container");
+            
+              novidades.forEach(novidade => {
+                const card = `
+                  <div class="card mb-3">
+                    <img src="${novidade.imagem}" class="card-img-top" alt="${novidade.titulo}" style="max-width: auto;max-height: 300px; pointer:none;">
+                    <div style="background-color: #24292e; " class="card-body">
+                      <h5 style= "color: white;" class="card-title">${novidade.titulo}</h5>
+                      <p style="color: white;" class="card-text">${novidade.descricao}</p>
+                    </div>
+                  </div>
+                `;
+                novidadesContainer.innerHTML += card;
+              });
+            
+              document.getElementById("btn-novidades").addEventListener("click", function () {
+                const modal = new bootstrap.Modal(document.getElementById("novidadesModal"));
+                modal.show();
+              });
+            });
+            </script>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   </body>
   
