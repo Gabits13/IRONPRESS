@@ -330,6 +330,132 @@ body{
 
 /*PAGE ORCAMENTO*/
 
+
+/* Seção de Contato */
+/* Contato */
+.contato {
+    padding: 60px 10%;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+
+.contato h2.heading {
+    margin-bottom: 4rem;
+    color: var(--text-color);
+}
+
+.contato-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contato-form {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    border: 0.2rem solid rgb(196, 193, 193);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .contato-form {
+    border: 0.2rem solid rgb(90, 90, 90);
+}
+
+.contato-form h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    border: 0.15rem solid rgb(224, 223, 223);
+    border-radius: 0.8rem;
+    background: var(--second-bg-color);
+    color: black;
+    font-size: 1.5rem;
+    resize: none;
+}
+
+.dark-mode .contato-form input,
+.dark-mode .contato-form textarea{
+  color: white;
+  border: 0.15rem solid rgb(90, 90, 90);
+}
+
+.contato-form input:hover,
+.contato-form textarea:hover {
+  
+    border: 0.15rem solid rgb(185, 184, 184);
+    background: rgb(180, 179, 179);
+    color: rgb(0, 0, 0);
+
+}
+
+.dark-mode .contato-form input:hover,
+.dark-mode .contato-form textarea:hover {
+  
+    border: 0.15rem solid rgb(61, 61, 61);
+    background: rgb(70, 70, 70);
+    color: rgb(248, 247, 247);
+
+}
+
+.contato-form .btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(rgb(214, 214, 214));
+    color: black;
+    font-size: 1.6rem;
+    border: 0.15rem solid orangered;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contato-form .btn:hover {
+    background: rgb(255, 118, 0);
+    color: var(--main-color);
+    border: 0.15rem solid var(--main-color);
+}
+
+.contato-links {
+    flex: 1 1 20rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contato-links h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.contato-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contato-icons a {
+    font-size: 3rem;
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+.contato-icons a:hover {
+    color: var(--text-color);
+    transform: scale(1.2);
+}
+
+
 .texto-imagem {
     position: absolute;
     bottom: 0;
@@ -403,265 +529,6 @@ body{
 
 body{
   background-color: #f6f6f6;
-}
-
-.form-orcamento {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #f6f6f6;
-}
-
-.form-orcamento .container {
-  background-color: #fff;
-  border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  position: relative;
-  overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
-}
-
-
-.form-orcamento .container p {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.3px;
-  margin: 20px 0;
-}
-
-.form-orcamento .container span {
-  font-size: 12px;
-}
-
-.form-orcamento .container a {
-  color: #333;
-  font-size: 13px;
-  text-decoration: none;
-  margin: 15px 0 10px;
-}
-
-.form-orcamento .container button {
-  background-color: rgb(255, 118, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 12px;
-  padding: 10px 45px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(34, 31, 31, 0.3);
-  transition: 0.5s ease;
-}
-
-.form-orcamento .container button.hidden {
-  background-color: transparent;
-  border-color: #fff;
-}
-
-.form-orcamento .container button:hover {
-  background: rgb(255, 118, 0);
-  transform: scale(1.1);
-}
-
-.form-orcamento .container form {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  height: 100%;
-}
-
-.form-orcamento .container input {
-  background-color: #eee;
-  border: none;
-  margin: 5px 0px 0px 0px;
-  padding: 10px 15px;
-  font-size: 13px;
-  border-radius: 8px;
-  width: 100%;
-  outline: none;
-}
-
-.input-box textarea {
-  background-color: #eee;
-  border: none;
-  margin: 0px 0;
-  padding: 10px 15px;
-  font-size: 13px;
-  border-radius: 8px;
-  width: 100%;
-  outline: none;
-  resize: none;
-}
-
-.form-orcamento .form-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  transition: all 0.6s ease-in-out;
-}
-
-.dark-mode .form-orcamento .form-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  transition: all 0.6s ease-in-out;
-}
-
-.form-orcamento .sign-in {
-  left: 0;
-  width: 50%;
-  z-index: 2;
-}
-
-.form-orcamento .container.active .sign-in {
-  transform: translateX(100%);
-}
-
-.form-orcamento .sign-up {
-  left: 0;
-  width: 50%;
-  opacity: 0;
-  z-index: 1;
-}
-
-.form-orcamento .container.active .sign-up {
-  transform: translateX(100%);
-  opacity: 1;
-  z-index: 5;
-  animation: move 0.6s;
-}
-
-@keyframes move {
-  0%, 49.99% {
-      opacity: 0;
-      z-index: 1;
-  }
-  50%, 100% {
-      opacity: 1;
-      z-index: 5;
-  }
-}
-
-.form-orcamento .social-icons {
-  margin: 20px 0;
-}
-
-.form-orcamento .social-icons a {
-  border: 1px solid #ccc;
-  border-radius: 20%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 3px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(218, 59, 59, 0.3);
-  transition: 0.3s ease;
-}
-
-.form-orcamento .social-icons a:hover {
-  transform: translateY(-25%);
-  background: rgb(255, 118, 0);
-}
-
-.form-orcamento .toggle-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  transition: all 0.6s ease-in-out;
-  border-radius: 150px 0 0 100px;
-  z-index: 1000;
-}
-
-.form-orcamento .container.active .toggle-container {
-  transform: translateX(-100%);
-  border-radius: 0 150px 100px 0;
-}
-
-.form-orcamento .toggle {
-  height: 100%;
-  background: linear-gradient(to bottom left, #0085C3, #3BBEE2);
-  color: #fff;
-  position: relative;
-  left: -100%;
-  height: 100%;
-  width: 200%;
-  transform: translateX(0);
-  transition: all 0.6s ease-in-out;
-}
-
-.form-orcamento .container.active .toggle {
-  transform: translateX(50%);
-}
-
-.form-orcamento .toggle-panel {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 30px;
-  text-align: center;
-  top: 0;
-  transform: translateX(0);
-  transition: all 0.6s ease-in-out;
-}
-
-.form-orcamento .toggle-left {
-  left: 0;
-  transform: translateX(-300%);
-}
-
-.form-orcamento .container.active .toggle-left {
-  transform: translateX(0);
-}
-
-.form-orcamento .toggle-right {
-  right: 0;
-  transform: translateX(0);
-}
-
-.form-orcamento .container.active .toggle-right {
-  transform: translateX(200%);
-}
-
-.form-orcamento .toggle-panel img {
-  width: auto;
-  max-width: 60%;
-  height: auto;
-  max-height: 150px;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.form-orcamento #rodape {
-  font-size: 12px;
-  color: #fff;
-  margin-top: 20px;
-  text-align: center;
-  opacity: 0.8;
 }
 
 
@@ -744,6 +611,22 @@ body{
   transform: scale(1.1);
 }
 
+/*mensagem de erro nos inputs*/
+
+ .form-orcamento .container{
+      margin-top: -10rem;
+      margin-bottom: 0rem;
+  }.input-box.invalid input,
+.input-box.invalid textarea {
+  border: 2px solid red;
+}
+
+.input-box small {
+  font-size: 0.9rem;
+  color: red;
+  margin-top: 2px;
+  display: block;
+}
 
 @media(max-width: 1500px) {
   .form-orcamento .container h2{
@@ -801,17 +684,17 @@ body{
 }
 
 /* Estilo para a mensagem de erro */
+/*
 .error-message {
-  font-size: 0.rem;  /* Tamanho menor da fonte */
-  color: red;  /* Cor vermelha para mensagens de erro */
-  display: none;  /* Oculta a mensagem de erro por padrão */
-  margin-top: 2px; /* Pequeno espaçamento entre o campo e a mensagem */
+  font-size: 0.rem;  
+  color: red;  
+  display: none;  
+  margin-top: 2px; 
 }
 
-/* Exibe a mensagem de erro quando o campo for inválido */
 .input-box.invalid .error-message {
   display: block;
-}
+}*/
 
 @media(max-width: 800px){
   .form-orcamento .container h2{
@@ -828,10 +711,8 @@ body{
     margin-top: 0rem;
 }
 
-  .form-orcamento .container{
-      margin-top: -10rem;
-      margin-bottom: 0rem;
-  }
+ 
+
 
 
 /* Removendo margens extras de cima e embaixo dos spans */
@@ -841,19 +722,21 @@ body{
   display: inline-block; /* Garante que o span ocupe apenas o espaço necessário */
 }
 
+
+
+
 /* Estilo para a mensagem de erro */
+/*
 .error-message {
-  font-size: 0.rem;  /* Tamanho menor da fonte */
-  color: red;  /* Cor vermelha para mensagens de erro */
-  display: none;  /* Oculta a mensagem de erro por padrão */
-  margin-top: 2px; /* Pequeno espaçamento entre o campo e a mensagem */
+  font-size: 0.rem;  
+  color: red;  
+  display: none;  
+  margin-top: 2px; 
 }
 
-/* Exibe a mensagem de erro quando o campo for inválido */
 .input-box.invalid .error-message {
   display: block;
-}
-}
+}*/
 
 @media(max-width: 420px){
   .form-orcamento .container h2{
@@ -876,9 +759,4 @@ body{
 }
 
 }
-
-
-
-
-
-
+}

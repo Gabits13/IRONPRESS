@@ -184,17 +184,7 @@ window.addEventListener('scroll', checkVisibility2);
 window.addEventListener('scroll', checkVisibility3);
 
 //pagina orçamento
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
 
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-});
-
-loginBtn.addEventListener('click', () => {
-    container.classList.remove("active"); 
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   const nomeInput = document.getElementById("nome");
@@ -310,10 +300,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  function mostrarErro(input, errorElement, message) {
+  input.closest(".input-box").classList.add("invalid");
+  errorElement.textContent = message;
+}
+
+function limparErro(input, errorElement) {
+  input.closest(".input-box").classList.remove("invalid");
+  errorElement.textContent = "";
+}
+
   // Função que envia os dados do formulário
-  function enviarFormulario() {
+  function enviarFormulario() { 
     const form = document.getElementById("orcamentoForm");
     form.submit(); // Submete o formulário
+    form.reset(); // Limpa os campos
+
   }
 
   // Chama a função de atualização de botão quando a página for carregada
@@ -322,13 +324,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//função antiga
-/* // Função para carregar a linguagem preferida ao carregar a página
-    function loadPreferredLanguage() {
-      const preferredLanguage = localStorage.getItem('preferredLanguage') || 'pt';
-      changeLanguage(preferredLanguage);
-    }
-    
-    // Chama a função ao carregar a página
-    document.addEventListener('DOMContentLoaded', loadPreferredLanguage);
-    */
+
